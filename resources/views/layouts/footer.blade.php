@@ -9,6 +9,7 @@
 <script type="text/javascript" src="{{ asset('backend\files\bower_components\jquery-slimscroll\js\jquery.slimscroll.js') }}"></script>
 <!-- modernizr js -->
 <script type="text/javascript" src="{{ asset('backend\files\bower_components\modernizr\js\modernizr.js') }}"></script>
+<script type="text/javascript" src="{{ asset('backend\files\bower_components\modernizr\js\css-scrollbars.js') }}"></script>
 <!-- Chart js -->
 <script type="text/javascript" src="{{ asset('backend\files\bower_components\chart.js\js\Chart.js') }}"></script>
 <!-- amchart js -->
@@ -18,6 +19,17 @@
 <script src="{{ asset('backend\files\assets\js\jquery.mCustomScrollbar.concat.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('backend\files\assets\js\SmoothScroll.js') }}"></script>
 <script src="{{ asset('backend\files\assets\js\pcoded.min.js') }}"></script>
+<!-- datatable js -->
+<script src="{{ asset('backend\files\bower_components\datatables.net\js\jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('backend\files\bower_components\datatables.net-bs4\js\dataTables.bootstrap4.min.js') }}"></script>
+<script src="{{ asset('backend\files\bower_components\datatables.net-responsive\js\dataTables.responsive.min.js') }}"></script>
+<script src="{{ asset('backend\files\bower_components\datatables.net-responsive-bs4\js\responsive.bootstrap4.min.js') }}"></script>
+<!-- jquery file upload js -->
+<script src="{{ asset('backend\files\assets\pages\jquery.filer\js\jquery.filer.min.js') }}"></script>
+<script src="{{ asset('backend\files\assets\pages\filer\custom-filer.js" type="text/javascript') }}"></script>
+<script src="{{ asset('backend\files\assets\pages\filer\jquery.fileuploads.init.js') }}" type="text/javascript"></script>
+
+
 <!-- custom js -->
 <script src="{{ asset('backend\files\assets\js\vartical-layout.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('backend\files\assets\pages\dashboard\custom-dashboard.js') }}"></script>
@@ -31,3 +43,4 @@
 
     gtag('config', 'UA-23581568-13');
 </script>
+@livewireScripts

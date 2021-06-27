@@ -24,4 +24,19 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href=" {{ asset('backend\files\assets\css\style.css') }}">
     <link rel="stylesheet" type="text/css" href=" {{ asset('backend\files\assets\css\jquery.mCustomScrollbar.css') }}">
+    <!-- Material Icon -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend\files\assets\icon\material-design\css\material-design-iconic-font.min.css') }}">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend\files\assets\icon\themify-icons\themify-icons.css') }}">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend\files\assets\icon\icofont\css\icofont.css') }}">
+    <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend\files\bower_components\datatables.net-bs4\css\dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend\files\bower_components\datatables.net-responsive-bs4\css\responsive.bootstrap4.min.css') }}">
+    <!-- jquery file upload Frame work -->
+    <link href="{{ asset('backend\files\assets\pages\jquery.filer\css\jquery.filer.css') }}" type="text/css" rel="stylesheet">
+    <link href="{{ asset('backend\files\assets\pages\jquery.filer\css\themes\jquery.filer-dragdropbox-theme.css') }}" type="text/css" rel="stylesheet">
+    <!-- animation nifty modal window effects css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend\files\assets\css\component.css') }}">
+    @livewireStyles
 </head>
