@@ -14,11 +14,11 @@
                     <strong>Success</strong> {{ Session::get('success_message') }}
                 </div>
             @endif
-            @if(Cart::count() > 0)
+            @if( Cart::instance('cart')->count() > 0)
             <div class="wrap-iten-in-cart">
                 <h3 class="box-title">Products Name</h3>
                 <ul class="products-cart">
-                    @foreach(Cart::content() as $item)
+                    @foreach( Cart::instance('cart')->content() as $item)
                     <li class="pr-cart-item">
                         <div class="product-image">
                             <figure><img src="{{ asset('assets/images/products') }}/{{ $item->model->image }}" alt="{{ $item->model->name }}"></figure>

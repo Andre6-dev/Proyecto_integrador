@@ -42,6 +42,7 @@ class AdminEditProductComponent extends Component
         $this->quantity = $product->quantity;
         $this->image = $product->image;
         $this->category_id = $product->category_id;
+        $this->newimage = $product->newimage;
         $this->product_id = $product->id;
     }
 
@@ -59,18 +60,18 @@ class AdminEditProductComponent extends Component
         $product->slug = $this->slug;
         $product->short_description = $this->short_description;
         $product->description = $this->description;
-        $this->regular_price = $product->regular_price;
-        $this->sale_price = $product->sale_price;
-        $this->SKU = $product->SKU;
-        $this->stock_status = $product->stock_status;
-        $this->featured = $product->featured;
-        $this->quantity = $product->quantity;
+        $product->regular_price = $this->regular_price;
+        $product->sale_price = $this->sale_price;
+        $product->SKU = $this->SKU;
+        $product->stock_status = $this->stock_status;
+        $product->featured = $this->featured;
+        $product->quantity = $this->quantity;
         if ($this->newimage) {
             $imageName = Carbon::now()->timestamp.'.'.$this->newimage->extension();
             $this->newimage->storeAs('products', $imageName);
             $product->image = $imageName;
         }
-        $this->category_id = $product->category_id;
+        $product->category_id = $this->category_id;
         $product->save();
         session()->flash('message', 'Product has been updated successfully!');
     }

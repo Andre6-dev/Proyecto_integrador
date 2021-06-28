@@ -1,5 +1,5 @@
 <head>
-    <title>Adminty - Premium Admin Template by Colorlib </title>
+    <title>KD3Store </title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -38,5 +38,11 @@
     <link href="{{ asset('backend\files\assets\pages\jquery.filer\css\themes\jquery.filer-dragdropbox-theme.css') }}" type="text/css" rel="stylesheet">
     <!-- animation nifty modal window effects css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('backend\files\assets\css\component.css') }}">
+    <!-- Multi Select css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend\files\bower_components\bootstrap-multiselect\css\bootstrap-multiselect.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend\files\bower_components\multiselect\css\multi-select.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- Select 2 css -->
+    <link rel="stylesheet" href="{{ asset('backend\files\bower_components\select2\css\select2.min.css') }}">
     @livewireStyles
 </head>
