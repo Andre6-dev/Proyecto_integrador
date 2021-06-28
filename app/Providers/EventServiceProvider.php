@@ -18,6 +18,23 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        
+        Illuminate\Cache\Events\CacheHit::class => [
+            App\Listeners\LogCacheHit::class,
+        ],
+    
+        Illuminate\Cache\Events\CacheMissed::class => [
+            App\Listeners\LogCacheMissed::class,
+        ],
+    
+        Illuminate\Cache\Events\KeyForgotten::class => [
+            App\Listeners\LogKeyForgotten::class,
+        ],
+    
+        Illuminate\Cache\Events\KeyWritten::class => [
+            App\Listeners\LogKeyWritten::class,
+        ],
+        
     ];
 
     /**
