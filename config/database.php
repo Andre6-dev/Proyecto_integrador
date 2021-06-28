@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mysql_remote','mongodb_atlas'),
 
     /*
     |--------------------------------------------------------------------------
@@ -91,6 +91,22 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'mongodb_atlas' => [
+            'driver' => 'mongodb',
+            'dsn' => 'mongodb+srv://admin:admintienda@cluster0.wgxmo.mongodb.net/tienda_virtual?retryWrites=true&w=majority',
+            'database' => env('MONGO_DB_DATABASE','tienda_virtual'),
+
+        ],
+
+        'mysql_remote' =>[
+            'driver' => 'mysql',
+            'host' => 'remotemysql.com',
+            'port' => '3306',
+            'database' => 'jqHC38gVtv',
+            'username' => 'jqHC38gVtv',
+            'password' => 'GsaN0MHlJy',
+        ],
+
     ],
 
     /*
@@ -140,6 +156,19 @@ return [
             'password' => env('REDIS_PASSWORD', null),
             'port' => env('REDIS_PORT', '6379'),
             'database' => env('REDIS_CACHE_DB', '1'),
+        ],
+
+        'session' => [
+
+            'host' => env('REDIS_HOST'),
+            //'redis-19798.c275.us-east-1-4.ec2.cloud.redislabs.com:19798',
+            'password' => env('REDIS_PASSWORD', 'dy52edt89ljiiwxw'),
+            'port' =>  env('REDIS_PORT', '19798'),
+            'database' => 'tiendavirtualmusica01',
+            //env('REDIS_PORT', '19798',10869),
+            //  'user' => 'default',
+            //    'database' => 1,
+
         ],
 
     ],

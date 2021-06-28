@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('CACHE_DRIVER', 'file'),
+    'default' => env('CACHE_DRIVER', 'mongodb'),
 
     /*
     |--------------------------------------------------------------------------
@@ -90,6 +90,12 @@ return [
 
         'octane' => [
             'driver' => 'octane',
+        ],
+
+        'mongodb' => [
+            'driver' => 'mongo',  //Nombre de nuestro Driver creado
+            'table' => 'cache', // Nombre de nuestra colección
+            'connection' => 'mongodb_atlas',  //Conección donde se alojará nuestra colección
         ],
 
     ],
